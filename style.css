@@ -2,26 +2,120 @@ html {
   height: 100%;
   width: 100%;
 }
-body{
-  position: relative;
-  left: 20px
+
+body {
+  margin: 0;
+  padding: 0;
 }
+
 #raroimg {
   position: relative;
  left: 40px
 }
 
-.youtube-square {
-  width: 500px;
-  height: 300px;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: top;
+.menu {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* branco transparente */
+  z-index: 1000; /* certifique-se de que o menu esteja acima de todos os outros elementos */
 }
-.youtube-square img {
-  position: relative;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu ul li {
+  float: right;
+}
+
+.menu ul li a {
+  display: block;
+  color: black; /* cor do texto do menu */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: #ddd; /* cor de fundo ao passar o mouse */
+}
+
+.container {
+  padding-top: 60px; /* para garantir que o conteúdo não seja ocultado pelo menu */
+}
+
+.caixa {
+    display: flex; /* Use flexbox para organizar os elementos lado a lado */
+    margin-bottom: 20px;
+}
+
+.caixa fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1; /* Ocupar todo o espaço disponível */
+    margin-right: 20px; /* Adicione margem entre as caixas */
+}
+
+.caixa legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.caixa label {
+    flex: 1; /* Distribua o espaço igualmente entre os rótulos */
+    margin-bottom: 5px;
+}
+
+.caixa input[type="text"],
+.caixa input[type="password"],
+.caixa input[type="email"],
+.caixa input[type="tel"],
+.caixa input[type="date"],
+.caixa select,
+.caixa input[type="color"],
+.caixa input[type="text"] {
+    flex: 2; /* Distribua o espaço igualmente entre os campos de entrada */
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.caixa input[type="radio"],
+.caixa input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.menu {
+    position: relative;
+    z-index: 1; /* Define a ordem de empilhamento */
+}
+
+.formulario ol {
+    list-style-type: none;
+    counter-reset: item;
+}
+
+.formulario ol li {
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+
+.formulario ol li::before {
+    content: "\2022"; /* Código unicode para uma bolinha preta */
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.opcao-resposta ul {
+    list-style-type: none;
+}
+
+.opcao-resposta ul li {
+    margin-bottom: 10px;
 }

@@ -2,48 +2,73 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <img src="./imagens/logo.jpg">
-  <p>  </p>
-  <strong>Eventos</strong>
-  <p>  </p>
-  <div id="raroimg">
-    <img src="./imagens/SEJA_RARO.jpg" width="370px"><br>
-    Aniversário do IFSP - Pirituba - Palestra Augusto Aielo
-  </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="entrar.html">ENTRAR</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="contatos.html">CONTATOS</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
 
-  <h2>Sobre a Biblioteca</h2>
-  <img src="./imagens/library.jpeg">
-  <p> </p>
-  <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
-  <p></p>
-  <h6>Publicado: Quarta-feira, 14 de agosto de 2019</h6>
-  <p>   </p>
-  
-
-  <div class="youtube-square"><h2>
-    <a href="https://www.youtube.com/watch?v=yVbOcB1ryh0" target="_blank" class="youtube-link">Turial de Acesso - SUAP 1</a>
-     <p>   </p>
-    <img src="imagens/botaoyoutube.png" width="100">
-  </h2></div>
-   <p>   </p>
-  <img src="./imagens/MoveTop.png" width="50">|
-    <a href="https://www.facebook.com/ifsppirituba" target="_blank" class="social-link">
-      <img src="./imagens/facebook.png" width="50" alt="Ícone do Facebook">
-    </a>
-  <br>
-  IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
-
-  
-
-
+    <div class="container">
+        <img src="./imagens/logo.jpg">
+       <p>  </p>
+      <strong>Cursos</strong>
+      <div class="cursos">
+          <ul>
+              <li><a href="ads.html"> Análise e desenvolvimento de sistemas</a></li>
+              <li><a href=""> Engenharia de Produção</a></li>
+              <li><a href=""> Gestão em Tecnologia da Informação</a></li>
+              <li><a href="">Letras</a></li>
+              <li><a href="">Gestão pública</a></li>
+          </ul>
+      </div>
+       <p>  </p>
+      <strong>Eventos</strong>
+      <p>  </p>
+      <div id="raroimg">
+        <img src="./imagens/SEJA_RARO.jpg" width="500"><br>
+        Aniversário do IFSP - Pirituba - Palestra Augusto Aielo
+      </div>
+        <h2>Sobre a Biblioteca</h2>
+        <img src="./imagens/library.jpeg">
+        <p></p>
+        <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
+        <p></p>
+        <h6>Publicado: Quarta-feira, 14 de agosto de 2019</h6>
+        <p></p>
+        <div>
+            <h2>Conheça o SUAP</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p></p>
+        <a href="#" id="moveTop">
+            <img src="./imagens/MoveTop.png" width="50">
+        </a>|
+        <a href="https://www.facebook.com/ifsppirituba" target="_blank" class="social-link">
+            <img src="./imagens/facebook.png" width="50" alt="Ícone do Facebook">
+        </a>
+        <br>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+    </div>
   <script src="script.js"></script>
+  <script>
+      document.getElementById('moveTop').addEventListener('click', function() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  </script>
 </body>
 
 </html>
